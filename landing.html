@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>HomeFreeHaven</title>
 </head>
 <body>
     <div id="container">
         <!--todo Build out side nav, then copy and paste to other files-->
         <div id="side-nav">
-            
+            <div id="overlay">
+                <img onclick="closeNav()" id="exit" src="assets/exit.png" alt="">
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="hosting.html">Hosting Info</a></li>
+                    <li><a href="donations.html">Donations</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="job.html">Job Opportunities</a></li>
+                    <li><a href="guest.html">Guest Info</a></li>
+                </ul>
+            </div>
         </div>
         <div id="navbar">
             <h1>HomeFreeHaven</h1>
             <!--todo Add function to display side nav -->
-            <svg onclick="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <svg onclick="openNav()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                 <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/>
             </svg>
         </div>
